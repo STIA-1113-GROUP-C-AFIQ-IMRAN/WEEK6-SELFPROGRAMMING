@@ -1,0 +1,77 @@
+Coding:
+package CLASS;
+
+import java.util.Scanner;
+
+public class Subjek {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+Scanner scanMe = new Scanner (System.in);
+		
+
+      int s1, s2;
+      char markah;
+      
+		System.out.print("Markah math: ");
+		s1 = scanMe.nextInt();
+		
+		
+		System.out.print("Markah science:");
+		s2 = scanMe.nextInt();
+		
+		if ((s1 > 50) && (s2 > 50))
+			
+			
+			System.out.println("Lulus kedua dua subjek");
+		else if((s1 < 50) && (s2 > 50))
+			
+			System.out.println("Lulus science sahaja");
+		
+		else if ((s1 > 50) && (s2 < 50))
+			
+			System.out.println("Lulus math sahaja");
+			
+			else
+				System.out.println("Gagal kedua dua subjek");
+		
+		
+		if (s1 > s2) {
+			System.out.println("math Lagi senang");
+		}
+		else {
+			System.out.println("science Lagi senang");
+		}
+		
+		double average = ((s1 +s2)/ 2);
+		
+			
+		if ((average >= 80) && (average <= 100))
+			markah = 'A';
+	
+	else if ((average >= 60) && (average <= 79))
+		markah = 'B';
+	
+	else if ((average >= 50) && (average <= 59))
+		markah = 'C';
+	
+	else
+		markah = 'G';
+		
+		System.out.println("Average:" + average);
+		System.out.println("Gred: " + markah);
+		
+
+	}
+
+}
+
+
+Output:
+Markah math: 80
+Markah science:40
+Lulus math sahaja
+math Lagi senang
+Average:60.0
+Gred: B
