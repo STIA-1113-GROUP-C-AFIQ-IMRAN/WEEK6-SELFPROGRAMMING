@@ -1,0 +1,40 @@
+Coding:
+package CLASS;
+
+import java.util.Scanner;
+
+public class thingi {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int year, month, day;
+		
+		year = 1582;
+		month = 10;
+		day = 15;
+		
+		System.out.println((year == 1582) && (month == 10) && (day == 15));
+		
+		double d1 = 2.2 + 4.4;
+		double d2 = 6.6;
+		int d3 = 2 + 4;
+		int d4 = 6;
+		String s1 = "Afiq";
+		String s2 = "Afiq";
+		
+		System.out.println(d1 == d2);
+		System.out.println(d3 == d4);
+		System.out.print(s1 == s2);
+
+	}
+
+}
+
+
+
+Output:
+true
+false
+true
+true
